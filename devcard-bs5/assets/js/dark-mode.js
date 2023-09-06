@@ -5,6 +5,8 @@
 const modeToggler = document.getElementById('darkmode');
 const documentBody = document.getElementsByTagName('body')[0];
 
+modeToggler.checked = true;
+
 
 function setThemeFromCookie() {
 	// Check if the cookie is set 
