@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>DevCard - Bootstrap 5 vCard &amp; Portfolio Template For Developers</title>
+    <title>Jorge Almarales</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DevCard Bootstrap 5 Template">
+    <!-- <meta name="description" content="DevCard Bootstrap 5 Template">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="favicon.ico">  -->
     
     <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -22,11 +22,11 @@
 
 </head> 
 
-<body>
+<body class="dark-mode">
     
-    <header class="header text-center">	    
+	<header class="header text-center">	    
 		<div class="force-overflow">
-			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Simon Doe</a></h1>
+			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="../index.html">Jorge Almarales</a></h1>
 			
 			<nav class="navbar navbar-expand-lg navbar-dark" >
 				
@@ -36,54 +36,54 @@
 				
 				<div id="navigation" class="collapse navbar-collapse flex-column" >
 					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="../my_page/assets/images/jorge/yo-aws2.jpg" alt="image" style="max-width: 120px;">			
 						
-						<div class="bio mb-3">Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!</div><!--//bio-->
+						<div class="bio mb-3">Hola, mi nombre es Jorge Almarales y soy ingeniero de software senior. ¡Bienvenido a mi sitio web personal!</div><!--//bio-->
 						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://twitter.com/jorgealmarales2"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/jorge-almarales-a0180018a/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a target="_blank" href="https://github.com/jorge-almarales22"><i class="fab fa-github-alt fa-fw"></i></a></li>
+							<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li> -->
 						</ul><!--//social-list-->
 						<hr> 
 					</div><!--//profile-section-->
 					
 					<ul class="navbar-nav flex-column text-start">
 						<li class="nav-item">
-							<a class="nav-link" href="../index.html"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
+							<a class="nav-link" href="../index.html"><i class="fas fa-user fa-fw me-2"></i>Acerca de mi</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
+							<a class="nav-link" href="./portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portafolios</a>
 						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="./my_page/services.html"><i class="fas fa-briefcase fa-fw me-2"></i>Services &amp; Pricing</a>
+						</li> -->
 						<li class="nav-item">
-							<a class="nav-link" href="services.html"><i class="fas fa-briefcase fa-fw me-2"></i>Services &amp; Pricing</a>
+							<a class="nav-link" href="./resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Currículum</a>
 						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="./blog-home.html"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
+						</li> -->
 						<li class="nav-item">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resume</a>
+							<a class="nav-link active" href="./contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contactos</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog-home.html"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item dropdown">
+						<!-- <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								<i class="fas fa-cogs fa-fw me-2"></i>More Pages
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="project.html">Project Page</a></li>
-								<li><a class="dropdown-item" href="blog-home.html">Blog Home 1</a></li>
-								<li><a class="dropdown-item" href="blog-home-alt.html">Blog Home 2</a></li>
-								<li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+								<li><a class="dropdown-item" href="./my_page/project.html">Project Page</a></li>
+								<li><a class="dropdown-item" href="./my_page/blog-home.html">Blog Home 1</a></li>
+								<li><a class="dropdown-item" href="./my_page/blog-home-alt.html">Blog Home 2</a></li>
+								<li><a class="dropdown-item" href="./my_page/blog-post.html">Blog Post</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul>
 					
-					<div class="my-2">
-						<a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
-					</div>
+					<!-- <div class="my-2">
+						<a class="btn btn-primary" href="./my_page/contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+					</div> -->
 					
 	
 					<div class="dark-mode-toggle text-center w-100">
@@ -94,6 +94,7 @@
 					    <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
 					    
 					</div><!--//dark-mode-toggle-->
+					
 				</div>
 			</nav>
 		</div><!--//force-overflow-->
@@ -102,22 +103,22 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center single-col-max-width">
-			    <h2 class="heading">Contact</h2>
+			    <h2 class="heading">Contacto</h2>
 			    <div class="intro">
-			    <p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <a  class="text-link" href="mailto:#">simon.doe@yourwebsite.com</a></p>
-			    <p>Want to get connected? Follow me on the social channels below.</p>
+			    <p>¿Estás interesado en contratarme para tu proyecto o simplemente quieres saludarme? Puede completar el formulario de contacto a continuación o enviarme un correo electrónico a <a  class="text-link" href="mailto:#">jorgealmarales22@gmail.com</a> o <a  class="text-link" href="mailto:#">jalmarales@unicesar.edu.co</a></p>
+			    <p>¿Quieres conectarte? Sígueme en los canales sociales a continuación.</p>
 			    <ul class="list-inline mb-0">
-		            <li class="list-inline-item mb-3"><a class="twitter" href="#"><i class="fab fa-twitter fa-fw fa-lg"></i></a></li>
+		            <li class="list-inline-item mb-3"><a class="twitter" target="_blank" href="https://twitter.com/jorgealmarales2"><i class="fab fa-twitter fa-fw fa-lg"></i></a></li>
 		            
-	                <li class="list-inline-item mb-3"><a class="linkedin" href="#"><i class="fab fa-linkedin-in fa-fw fa-lg"></i></a></li>
-	                <li class="list-inline-item mb-3"><a class="github" href="#"><i class="fab fa-github-alt fa-fw fa-lg"></i></a></li>
-	                <li class="list-inline-item"><a class="instagram" href="#"><i class="fab fa-instagram fa-fw fa-lg"></i></a></li>
-	                <li class="list-inline-item mb-3"><a class="stack-overflow" href="#"><i class="fab fa-stack-overflow fa-fw fa-lg"></i></a></li>
-	                <li class="list-inline-item mb-3"><a class="medium" href="#"><i class="fab fa-medium-m fa-fw fa-lg"></i></a></li>
-	                <li class="list-inline-item mb-3"><a class="codepen" href="#"><i class="fab fa-codepen fa-fw fa-lg"></i></a></li>
+	                <li class="list-inline-item mb-3"><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/jorge-almarales-a0180018a/"><i class="fab fa-linkedin-in fa-fw fa-lg"></i></a></li>
+	                <li class="list-inline-item mb-3"><a class="github" target="_blank" href="https://github.com/jorge-almarales22"><i class="fab fa-github-alt fa-fw fa-lg"></i></a></li>
+	                <li class="list-inline-item"><a class="instagram" target="_blank" href="https://www.instagram.com/jorgealmarales22/"><i class="fab fa-instagram fa-fw fa-lg"></i></a></li>
+	                <!-- <li class="list-inline-item mb-3"><a class="stack-overflow" target="_blank" href="#"><i class="fab fa-stack-overflow fa-fw fa-lg"></i></a></li> -->
+	                <li class="list-inline-item mb-3"><a class="codepen" target="_blank" href="https://www.facebook.com/jorge.almaralex.1/"><i class="fab fa-facebook fa-fw fa-lg"></i></a></li>
+	                <!-- <li class="list-inline-item mb-3"><a class="codepen" target="_blank" href="#"><i class="fab fa-codepen fa-fw fa-lg"></i></a></li> -->
 	                
 	                
-	                <!--<li class="list-inline-item mb-3"><a class="facebook" href="#"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a></li>-->
+	                <!--<li class="list-inline-item mb-3"><a class="facebook" target="_blank" href="#"><i class="fab fa-facebook-f fa-fw fa-lg"></i></a></li>-->
 	                
 	                
 	            </ul><!--//social-list-->
@@ -127,17 +128,17 @@
 	    <section class="contact-section px-3 py-5 p-md-5">
 		    <div class="container">
 			    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
-			        <h3 class="text-center mb-3">Get In Touch</h3>
+			        <h3 class="text-center mb-3">Ponerse en contacto</h3>
 			        <div class="row g-3">                                                           
 		                <div class="col-12 col-md-6">
-		                    <label class="sr-only" for="cname">Name</label>
-		                    <input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="2" required="" aria-required="true">
+		                    <label class="sr-only" for="cname">Nombre</label>
+		                    <input type="text" class="form-control" id="cname" name="name" placeholder="Nombre" minlength="2" required="" aria-required="true">
 		                </div>                    
 		                <div class="col-12 col-md-6">
-		                    <label class="sr-only" for="cemail">Email</label>
-		                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required="" aria-required="true">
+		                    <label class="sr-only" for="cemail">Correo</label>
+		                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Correo" required="" aria-required="true">
 		                </div>
-		                <div class="col-12">
+		                <!-- <div class="col-12">
 			                <select id="services" class="form-select" name="services">
 								<option selected>Select a service package you're interested in...</option>
 								<option value="basic">Basic</option>
@@ -148,22 +149,22 @@
 							<div class="mt-2">
 							    <small class="form-text text-muted pt-1"><i class="fas fa-info-circle me-2 text-primary"></i>Want to know what's included in each package? Check the <a class="text-link" href="services.html" target="_blank">Services &amp; Pricing</a> page.</small>
 							</div>
-						</div>
+						</div> -->
 		                <div class="col-12">
-		                    <label class="sr-only" for="cmessage">Your message</label>
-		                    <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
+		                    <label class="sr-only" for="cmessage">Tu mensaje</label>
+		                    <textarea class="form-control" id="cmessage" name="message" placeholder="Ingresa tu mensaje" rows="10" required="" aria-required="true"></textarea>
 		                </div>
-		                 <div class="form-group col-12">
-		                    <button type="submit" class="btn btn-block btn-primary py-2">Send Now</button>
+		                 <div class="form-group col-12 text-center">
+		                    <button type="submit" class="btn btn-block btn-primary py-2">Enviar</button>
 		                </div>                           
 		            </div><!--//form-row-->
 		        </form>
 		    </div><!--//container-->
 	    </section>
 	    
-	    <footer class="footer text-center py-4">
+	    <!-- <footer class="footer text-center py-4">
 			<small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-		</footer>
+		</footer> -->
     
     </div><!--//main-wrapper-->
     
