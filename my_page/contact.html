@@ -127,7 +127,13 @@
 	    </section>
 	    <section class="contact-section px-3 py-5 p-md-5">
 		    <div class="container">
-			    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
+				<div class="alert alert-success text-center d-none" role="alert">
+					¡Te has puesto en contacto conmigo, muchas gracias!
+				</div>
+				<div class="alert alert-danger text-center d-none" role="alert">
+					Por favor diligencia bien el formulario
+				</div>
+			    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="http://localhost:3000/api">
 			        <h3 class="text-center mb-3">Ponerse en contacto</h3>
 			        <div class="row g-3">                                                           
 		                <div class="col-12 col-md-6">
@@ -199,6 +205,53 @@
 
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
     <script src="assets/js/demo/style-switcher.js"></script>     
+
+
+	<script>
+		const form = document.getElementById('contact-form')
+
+		form.addEventListener('submit', submitForm)
+
+		function submitForm(e){
+			e.preventDefault()
+			const name = document.getElementById('cname').value
+			const email = document.getElementById('cemail').value
+			const message = document.getElementById('cmessage').value
+
+			if(!name || !email || !message){
+				document.querySelector('.alert-danger').classList.remove('d-none')
+
+				setTimeout(() => {
+					document.querySelector('.alert-danger').classList.add('d-none')
+				}, 2000)
+
+				return
+			}
+
+			const url = 'http://localhost:3000/api';
+			let data = {
+				name,
+				email,
+				message
+			}
+
+			fetch(url, {
+			method: "POST",
+			body: JSON.stringify(data),
+			headers: {"Content-type": "application/json; charset=UTF-8"}
+			})
+			.then(response => response.json()) 
+			.then(json => {
+				console.log(json)
+				document.querySelector('.alert-success').classList.remove('d-none')
+				document.getElementById('cname').value = ''
+				document.getElementById('cemail').value = ''
+				document.getElementById('cmessage').value = ''
+
+			})
+			.catch(err => console.log(err));
+		}
+	</script>
     
 
 </body>
