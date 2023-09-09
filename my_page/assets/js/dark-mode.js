@@ -1,16 +1,12 @@
 "use strict";
 
-/* Dependency: js-cookie plugin - Ref: https://github.com/js-cookie/js-cookie */
-
 const modeToggler = document.getElementById('darkmode');
 const documentBody = document.getElementsByTagName('body')[0];
 
-modeToggler.checked = true;
-
-
 function setThemeFromCookie() {
+
 	// Check if the cookie is set 
-	if (typeof Cookies.get('mode') !== "undefined" ) {
+	if (Cookies.get('mode') === undefined ) {
 		documentBody.classList.add('dark-mode');
 		modeToggler.checked = true; // toggle change
 		
@@ -29,21 +25,21 @@ setThemeFromCookie();
 
 
 modeToggler.addEventListener('change', () => {
-	
-	console.log(modeToggler.checked);
-	
-    if (modeToggler.checked) {
-		documentBody.classList.add('dark-mode');
-		//Set cookies for 7 days 
-		Cookies.set('mode', 'dark-mode', { expires: 7 });
 		
-		console.log ('change to dark mode');
+    if (!modeToggler.checked) {
+
+		documentBody.classList.remove('dark-mode');
+		//Set cookies for 7 days 
+		Cookies.set('mode', 'white-mode', { expires: 7 });
+		
+		console.log ('change to white mode');
 		
 	} else {
-		documentBody.classList.remove('dark-mode');
+		documentBody.classList.add('dark-mode');
+
 		//Remove cookies
 		Cookies.remove('mode');
 		
-		console.log ('change to light mode');
+		console.log ('change to dark mode');
 	}
 });
